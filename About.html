@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root{--pink:#e84393;}
+        .heading{
+            text-align: center;
+font-size: 4rem;
+color: #333;
+padding: 1rem;
+margin: 2rem 0;
+background: rgb(255,51,153,.05);
+        }
+        .heading span{
+            color: var(--pink);
+        }
+        @media (max-width:450px) {
+            .heading{
+                font-size: 3rem;
+            }
+        }
+        .About .row{
+        display: flex;
+align-items: center;
+gap: 2rem;
+flex-wrap: wrap;
+padding: 2rem 0;
+padding-bottom: 3rem;
+        }
+.About .row .video-container video{
+    width: 100%;
+border: 1.5rem solid #fff;
+border-radius: .5rem;
+box-shadow: 0 .5rem 1rem rgb(0,0,0,.1);
+height: 500px;
+object-fit: cover;
+}
+.About .row .video-container h3{
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+font-size: 3rem;
+background: #fff;
+width: 100%;
+padding: 1rem 2rem;
+text-align: center;
+}
+.About .row .content{
+    flex: 1 1 40rem;
+}
+.About .row .content h3{
+font-size: 3rem;
+    color: #333;
+    text-align: center;
+}
+.About .row .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: .5rem 0;
+padding-top: 1rem;
+line-height: 1.5;
+}
+.btn{
+    display: inline-block;
+margin-top: 1rem;
+border-radius: 5rem;
+background: #333;
+color: #fff;
+padding: .9rem 3.5rem;
+cursor: pointer;
+font-size: 1.7rem;
+}
+.btn:hover{
+    background: plum;
+}
+*{
+    margin: 0;padding: 0;
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+outline: none;border:none; 
+text-decoration: none;
+text-transform: capitalize;
+transition: .2s linear;
+}
+.icons-container{
+background: #eee;
+display: flex;
+flex-wrap: wrap;
+gap: 1.5rem;
+padding-top: 5rem;
+padding-bottom: 5rem;
+}
+.icons-container .icons{
+    background:#fff ;
+border: 1rem solid rgb(0,0,0,.1);
+padding: 2rem;
+display: flex;
+align-items: center;
+flex: 1 1 25rem;
+}
+.icons-container .icons img{
+    height: 5rem;
+    margin-right: 2rem;
+}
+.icons-container .icons h3{
+color: #333;
+font-size: 1.5rem;
+}
+.icons-container .icons span{
+    color: #555;
+    font-size: 1.3rem;
+}
+header{
+position: fixed;
+top: 0;left: 0;right: 0;
+background: #fff;
+padding: 2rem 9%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+header .logo{
+    font-size: 3rem;
+color: #333;
+font-weight: bolder;
+}
+header .logo span{
+    color: var(--pink);
+}
+header .navbar a{
+    font-size: 2rem;
+padding:0 1.5rem ;
+color: #666;
+}
+header .navbar a:hover{
+    color: var(--pink);
+}
+header .icons a:hover{
+    color: var(--pink);
+}
+html{
+    font-size: 62.5%;
+scroll-behavior: smooth;
+scroll-padding-top: 6rem;
+overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+    margin-top: 40px;
+}
+.video-container{
+    width: 100%;
+height: 500px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        
+        <a href="#" class="logo">Flower <span>.</span></a>
+        <nav class="navbar">
+            <a href="Index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Products.html">Products</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-shopping-cart"></i>
+    <i class="fas fa-heart"></i>
+<i class="fas fa-user"></i>
+        </div>
+    </header>
+    <section class="About" id="About">
+<h1 class="heading"><span>About</span> Us</h1>
+<div class="row">
+<div class="video-container">
+<video src="vidfleurs.mp4" loup autoplay muted ></video>
+<h3>Best flower sellers</h3>
+</div>
+<div class="conent">
+    <h3>Why choose us  ?</h3>
+    <p>Nos clients nous choisissent pour notre engagement envers la qualité, notre service personnalisé et notre passion</p>
+        <p>pour ce que nous faisons. Nous sélectionnons soigneusement chaque produit pour garantir des fleurs fraîches et de haute qualité, et nous mettons un point d'honneur à répondre aux besoins uniques de chaque client. Grâce à notre expertise et notre attention aux détails, nous créons des compositions florales qui rendent chaque occasion spéciale. Votre satisfaction est notre priorité, et c'est ce qui fait de nous le choix préféré de nos clients.</p>
+            <a href="#" class="btn">Learn more</a>
+</div>
+</div>
+    </section>
+    <section class="icons-container">
+<div class="icons">
+<img src="truck-solid.svg" width="20%">
+<div class="info">
+    <h3>Free delivery</h3>
+    <span>on all orders</span>
+</div>
+</div>
+    <div class="icons">
+        <img src="money-check-solid.svg" width="20%" >
+        <div class="info">
+            <h3>secure paymens</h3>
+            <span>protected by paypal</span>
+        </div>
+        </div>
+        <div class="icons">
+            <img src="gift-solid.svg" width="20%">
+            <div class="info">
+                <h3>offer & gifts</h3>
+                <span>on all orders</span>
+            </div>
+            </div>
+    </section>
+</body>
+</html>

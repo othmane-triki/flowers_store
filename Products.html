@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<style>
+:root {
+    --pink: #ff3399;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+section {
+    padding: 2rem 9%;
+    margin-top: 40px;
+}
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, 0.05);
+}
+.heading span {
+    color: var(--pink);
+}
+@media (max-width: 450px) {
+    .heading {
+        font-size: 3rem;
+    }
+}
+.products .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.products .box-container .box {
+    flex: 1 1 30rem;
+    box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 1rem;
+}
+.products .box-container .box .image-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.products .box-container .box .image-container img {
+    width: 90%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.products .box-container .box .image-container img:hover  {
+    width: 100%;
+    
+    transform: scale(1.05);
+}
+
+.products .box-container .box .discount {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: var(--pink);
+    z-index: 1;
+    border-radius: 0.5rem;
+}
+.products .box-container .box .icons {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: #ff3399;
+}
+.products .box-container .box .icons .center {
+    align-content: center;
+    }
+
+.products .box-container .box .icons a {
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    width: 4rem;
+    margin: 0 0.5rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--pink);
+    color: #fff;
+}
+.products .box-container .box .icons a:hover {
+    background: #333;
+}
+.products .box-container .box .content {
+    text-align:center;
+    margin-top: 1rem;
+}
+.products .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #333;
+}
+.products .box-container .box .content .price {
+    font-size: 2rem;
+    color: var(--pink);
+    font-weight: bolder;
+    padding-top: 0.5rem;
+}
+.products .box-container .box .content .price span {
+    font-size: 1.5rem;
+    color: #999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+header{
+position: fixed;
+top: 0;left: 0;right: 0;
+background: #fff;
+padding: 2rem 9%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+header .logo{
+    font-size: 3rem;
+color: #333;
+font-weight: bolder;
+}
+header .logo span{
+    color: var(--pink);
+}
+header .navbar a{
+    font-size: 2rem;
+padding:0 1.5rem ;
+color: #666;
+}
+header .navbar a:hover{
+    color: var(--pink);
+}
+header .icons a:hover{
+    color: var(--pink);
+}
+
+
+html{
+    font-size: 62.5%;
+scroll-behavior: smooth;
+scroll-padding-top: 6rem;
+overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+}
+.products .box-container .box .icons h2{
+    color: white;
+    
+}
+img:hover{
+    background-color: #fff;
+}
+</style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Flower <span>.</span></a>
+        <nav class="navbar">
+            <a href="Index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Products.html">Products</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-shopping-cart"></i>
+    <i class="fas fa-heart"></i>
+<i class="fas fa-user"></i>
+        </div>
+    </header>
+<section class="products" id="products">
+<h1 class="heading">Latest <span>products</span></h1>
+<div class="box-container">
+    <div class="box">
+        <span class="discount">-10%</span>
+        <div class="image-container">
+            <img src="FLEURS5.jpg" alt="flower pot">
+        </div>
+        <div class="icons" >
+            <a href="#" class="fas fa-heart"></a>
+            <h2 class="center">Add to cart</h2>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+        <div class="content">
+            <h3>La tulipe</h3>
+            <div class="price">135.99 DHS <span>150.99 DHS</span></div>
+        </div>
+    </div>
+    <!-- Product Box 2 -->
+    <div class="box">
+        <span class="discount">-20%</span>
+        <div class="image-container">
+            <img src="fleure4.jpg" alt="flower pot">
+        </div>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <h2 class="center">Add to Cart</h2>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+        <div class="content">
+            <h3>Cerisier</h3>
+            <div class="price">137.99 DHS <span>172.99 DHS</span></div>
+        </div>
+    </div>
+    <!-- Product Box 3 -->
+    <div class="box">
+        <span class="discount">-5%</span>
+        <div class="image-container">
+            <img src="FLEURS10.jpg" >
+        </div>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <h2 class="center">Add to Cart</h2>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+        <div class="content">
+            <h3>La violette</h3>
+            <div class="price">151.99 DHS <span>159.99 DHS</span></div>
+        </div>
+    </div>
+    <div class="box">
+        <span class="discount">-20%</span>
+        <div class="image-container">
+            <img src="FLEURS9.jpg" alt="flower pot">
+        </div>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <h2 class="center">Add to Cart</h2>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+        <div class="content">
+            <h3>La rose</h3>
+            <div class="price">114.99 DHS <span>143.99 DHS</span></div>
+        </div>
+    </div>
+    <div class="box">
+        <span class="discount">-20%</span>
+        <div class="image-container">
+            <img src="FLEURS8.jpg" alt="flower pot">
+        </div>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <h2 class="center">Add to Cart</h2>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+        <div class="content">
+            <h3>Le souci</h3>
+            <div class="price">152.99 DHS <span>190.99 DHS</span></div>
+        </div>
+    </div>
+    <div class="box">
+        <span class="discount">-20%</span>
+        <div class="image-container">
+            <img src="FLEURS7.jpg" alt="flower pot">
+        </div>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <h2 class="center">Add to Cart</h2>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+        <div class="content">
+            <h3>La jonquille</h3>
+            <div class="price">144.99 DHS <span>180.99 DHS</span></div>
+        </div>
+    </div>
+    <div class="box">
+        <span class="discount">-20%</span>
+        <div class="image-container">
+            <img src="FLEURS6.jpg" alt="flower pot">
+        </div>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <h2 class="center">Add to Cart</h2>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+        <div class="content">
+            <h3>L'iris</h3>
+            <div class="price">240.99 DHS <span>300.99 DHS</span></div>
+        </div>
+    </div>
+    <div class="box">
+        <span class="discount">-20%</span>
+        <div class="image-container">
+            <img src="FLEURS3.jpg" alt="flower pot">
+        </div>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <h2 class="center">Add to Cart</h2>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+        <div class="content">
+            <h3>Le narcisse</h3>
+            <div class="price">117.99 DHS <span>147.99 DHS</span></div>
+        </div>
+    </div>
+    <div class="box">
+        <span class="discount">-20%</span>
+        <div class="image-container">
+            <img src="fleure4.jpg" alt="flower pot">
+        </div>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <h2 class="center">Add to Cart</h2>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+        <div class="content">
+            <h3>Le lys</h3>
+            <div class="price">120.99 DHS <span>150.99 DHS</span></div>
+        </div>
+    </div>
+    <div class="box">
+        <span class="discount">-20%</span>
+        <div class="image-container">
+            <img src="fleurs1.jpg" alt="flower pot">
+        </div>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <h2 class="center">Add to Cart</h2>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+        <div class="content">
+            <h3>Marguerite</h3>
+            <div class="price">160.99 DHS <span>200.99 DHS</span></div>
+        </div>
+    </div>
+    <div class="box">
+        <span class="discount">-13%</span>
+        <div class="image-container">
+            <img src="fleur11.jpg" alt="flower pot">
+        </div>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <h2 class="center">Add to Cart</h2>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+        <div class="content">
+            <h3>Pivoine</h3>
+            <div class="price">130.99 DHS <span>150.99 DHS</span></div>
+        </div>
+    </div>
+    <div class="box">
+        <span class="discount">-11%</span>
+        <div class="image-container">
+            <img src="FLEUR12.jpg" alt="flower pot">
+        </div>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <h2 class="center">Add to Cart</h2>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+        <div class="content">
+            <h3>L'orchidée</h3>
+            <div class="price">124.99 DHS <span>140.99 DHS</span></div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>
